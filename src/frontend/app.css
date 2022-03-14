@@ -1,0 +1,22 @@
+.container{
+    width: 25%;
+    height: 45%;
+    background-color: #273239;
+    margin: auto;
+    margin-top: 200px;
+}
+
+.container input{
+    display: flex;
+    margin-left: 25%;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.notification{
+    width: 30%;
+    height: 50%;
+    background-color: #04AA6D;
+}
