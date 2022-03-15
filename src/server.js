@@ -24,9 +24,16 @@ app.use(express.static('src'));
 /*------------------------------------------------------*/
 
 app.get('/login', function(req, res){
-  res.sendFile(path.resolve(__dirname,'./frontend/app.html'))
+  res.sendFile(path.resolve(__dirname,'./frontend/login.html'))
 });
-
+app.get('/app', function(req, res){
+  res.sendFile(path.resolve(__dirname,'./frontend/app.html'))
+});app.get('/data', function(req, res){
+  res.sendFile(path.resolve(__dirname,'./frontend/data.html'))
+});
+app.post('/add',function(req, res){
+  res.send("Entendido");
+});
 // Inicializar el servidor
 server.listen(port, ()=>{
   console.log("Server on: http://localhost:"+port);
